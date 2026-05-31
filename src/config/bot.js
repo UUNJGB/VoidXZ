@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "dnd",
+    status: "online",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,10 +24,10 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Competing with /help",
+        // Text users will see (example: "Playing Minecraft: Void Edition").
+        name: "Minecraft: Void Edition",
         // Activity type number (0 = Playing).
-        type: 5, 
+        type: 0, 
       },
     ],
   },
@@ -545,7 +545,4 @@ export function getRandomColor() {
 }
 
 export default botConfig;
-
-
-
 
