@@ -111,9 +111,9 @@ class TitanBot extends Client {
       this.user.setPresence({
         activities: [
           {
-            name: 'Playing Solo',
+            name: 'Minecraft: Void Edition',
             type: 'PLAYING',
-            state: 'Competitive'
+            state: 'Always Online'
           }
         ],
         status: 'online'
@@ -257,9 +257,9 @@ class TitanBot extends Client {
     // Update presence every 30 seconds with rotating statuses
     this.presenceIndex = 0;
     const presences = [
-      { name: 'Playing Solo', type: 'PLAYING', state: 'Competitive' },
+      { name: 'Minecraft: Void Edition', type: 'PLAYING', state: 'Always Online' },
       { name: 'Over Your Server', type: 'WATCHING', state: 'Ready to help!' },
-      { name: 'Your Commands', type: 'LISTENING', state: 'Always online' }
+      { name: 'Your Commands', type: 'LISTENING', state: 'Void Edition' }
     ];
     
     setInterval(() => {
